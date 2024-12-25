@@ -2,6 +2,15 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 
+'''
+Targets: Remove dropout 
+Results:
+    Parameters: 7828
+    Best train accuracy: 99.61%
+    Best test accuracy: 99.45%
+Analysis: Achieved target of >99.4% test accuracy with 8k model parameters within 15 epochs
+File Link: https://github.com/Arjunp24/experimental-training-cnn-classifier/blob/main/model_3.py 
+'''
 class Model_3(nn.Module):
     def __init__(self):
         super(Model_3, self).__init__()

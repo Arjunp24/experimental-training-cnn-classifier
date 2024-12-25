@@ -1,7 +1,15 @@
 import torch.nn as nn
 import torch.nn.functional as F
 
-
+'''
+Targets: Train baseline (using model from previous assignment) using 15 epochs  
+Results:
+    Parameters: 18596 
+    Best train accuracy: 99.34% 
+    Best test accuracy: 99.49%  
+Analysis: Reduce parameters 
+File Link: https://github.com/Arjunp24/experimental-training-cnn-classifier/blob/main/model_1.py 
+'''
 class Model_1(nn.Module):
     def __init__(self):
         super(Model_1, self).__init__()
